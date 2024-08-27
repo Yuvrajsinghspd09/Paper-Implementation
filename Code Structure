@@ -1,0 +1,30 @@
+To code this from scratch:
+1. Set up your environment:
+   * Install necessary libraries (PyTorch, transformers)
+2. Implement GPT2FeatureExtractor:
+   * Use transformers library to load GPT-2 model and tokenizer
+   * Implement methods to extract and process hidden states
+3. Create MLP class:
+   * Define a flexible neural network architecture
+   * Implement forward pass
+4. Develop MLPClassifier:
+   * Wrap MLP with training and evaluation functionality
+   * Implement data normalization and class weighting
+   * Set up training loop with specified optimizer and loss function
+5. Build GPT2Classifier:
+   * Combine GPT2FeatureExtractor and MLPClassifier
+   * Implement methods for feature extraction, training, and classification
+6. Create a configuration system:
+   * Define a structure for specifying model architecture and training parameters
+7. Implement utility functions:
+   * Data loading and preprocessing
+   * Evaluation metrics
+8. Main script:
+   * Load configuration
+   * Initialize GPT2Classifier with training data
+   * Implement inference pipeline for new prompts
+9. Testing:
+   * Create test cases for each component
+   * Validate end-to-end functionality
+
+
