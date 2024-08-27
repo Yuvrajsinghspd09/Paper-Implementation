@@ -9,6 +9,13 @@ from torch.utils.data import DataLoader, TensorDataset
 
 # STEP_2 GPT2FeatureExtractor
 
+'''
+ Implement GPT2FeatureExtractor:
+   * Use transformers library to load GPT-2 model and tokenizer
+   * Implement methods to extract and process hidden states
+'''
+
+
 class GPT2FeatureExtractor:
   def __init__(self,model_name='gpt2'):
     self.tokenizer=GPT2Tokenizer.from_pretrained(model_name)
